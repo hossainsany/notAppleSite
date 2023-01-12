@@ -1,0 +1,473 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Poppins", sans-serif;
+}
+.container {
+    width: 1000px;
+    margin: 0 auto;
+}
+.hero-text {
+    text-align: center;
+    h2 {
+        font-size: 50px;
+        font-weight: 600;
+    }
+    h4 {
+        font-size: 26px;
+        font-weight: 400;
+    }
+}
+.links {
+    color: #2997ff;
+    text-decoration: none;
+    font-size: 20px;
+    display: inline-block;
+    margin: 15px 10px;
+    i {
+        font-size: 14px;
+        padding-left: 5px;
+        display: inline-block;
+    }
+    &:hover {
+        text-decoration: underline;
+    }
+}
+.nav {
+    background-color: #000;
+    padding: 15px 0;
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        a {
+            color: #f5f5f7c4;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 12px;
+            transition: all 150ms ease-in-out;
+            &:hover {
+                color: #fff;
+            }
+        }
+        .logo {
+            margin-right: 20px;
+            i {
+                font-size: 18px;
+            }
+        }
+        .menu-items {
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
+        .cart {
+            margin-left: 20px;
+            i {
+                font-size: 14px;
+            }
+        }
+    }
+}
+.main-sections {
+    background: url("../img/home/14pro.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 700px;
+    padding: 60px 0;
+    .hero-text {
+        color: #fff;
+        text-align: center;
+        h2 {
+            font-size: 50px;
+            font-weight: 600;
+            padding-bottom: 5px;
+            i {
+                font-size: 50px;
+            }
+        }
+        .subtitle {
+            text-transform: uppercase;
+            font-size: 24px;
+            color: #cc2127;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+        .links {
+            margin-top: 5px;
+        }
+        h4 {
+            font-size: 24px;
+            font-weight: 400;
+        }
+    }
+}
+
+.hero-14 {
+    background: url("../img/home/iphone14.jpg");
+    background-position: center;
+
+    .hero-text {
+        color: #1d1d1f;
+    }
+}
+.watch {
+    background: url("../img/home/watch.jpg");
+    background-position: center;
+    .hero-text {
+        h2 {
+            font-size: 46px;
+            line-height: 46px;
+            font-weight: 600;
+            i {
+                font-size: 50px;
+            }
+        }
+        .subtitle {
+            color: #cc2127;
+        }
+    }
+}
+.product-list {
+    .products-row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        .main-sections {
+            background: url("../img/home/watch-ultra-bg.jpg");
+            background-position: center;
+            background-size: cover;
+            min-height: 600px;
+            width: 48.2%;
+            margin: 15px 15px 0 15px;
+            &:last-child {
+                margin-left: 0;
+            }
+            .hero-text {
+                color: #1d1d1f;
+                width: 100%;
+                h2 {
+                    font-size: 40px;
+                    line-height: 40px;
+                }
+                .subtitle {
+                    color: #fd6a13;
+                }
+                h4 {
+                    font-size: 20px;
+                    width: 45%;
+                    margin: 0 auto;
+                }
+                .links {
+                    font-size: 16px;
+                }
+            }
+        }
+        .main-sections.fitness {
+            background: url("../img/home/fitness-bg.png");
+            background-position: center;
+            background-size: cover;
+        }
+        .main-sections.gift {
+            background: url("../img/home/gift-bg.png");
+            background-position: center;
+            background-size: cover;
+            .hero-text {
+                color: #fff;
+
+                .links {
+                    color: #fff;
+                }
+            }
+        }
+        .main-sections.ipad {
+            background: url("../img/home/ipad-bg.png");
+            background-position: center;
+            background-size: cover;
+        }
+        .main-sections.airpods {
+            background: url("../img/home/airpods-bg.jpg");
+            background-position: center;
+            background-size: cover;
+            padding: 70px 0 0 0;
+            .hero-text {
+                color: #fff;
+            }
+        }
+        .main-sections.card {
+            background: url("../img/home/card-bg.png");
+            background-position: center;
+            background-size: cover;
+            .hero-text {
+                h4 {
+                    width: 50%;
+                    margin: 0 auto;
+                }
+            }
+        }
+    }
+}
+
+.slider {
+    display: none;
+    overflow-y: scroll;
+    margin: 20px 0;
+    .single-slider {
+        margin-right: 20px;
+    }
+}
+
+.footer {
+    background-color: #f5f5f7;
+    color: #6e6e73;
+    margin-top: 15px;
+    .footer-top {
+        padding: 20px 0;
+        border-bottom: 1px solid #c2c1c1;
+        p {
+            font-size: 12px;
+            padding-bottom: 10px;
+        }
+        .disclaimer {
+            font-weight: 500;
+            font-size: 14px;
+            background-color: rgb(255, 255, 255);
+            text-align: center;
+            border-radius: 3px;
+            padding-top: 7px;
+            margin-top: 10px;
+        }
+    }
+    .footer-middle {
+        padding: 30px 0;
+        .footer-links {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            h4 {
+                font-size: 14px;
+                font-weight: 500;
+                color: #2c2c2c;
+            }
+            ul {
+                list-style: none;
+                a {
+                    color: #6e6e73;
+                    font-size: 12px;
+                    text-decoration: none;
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+    .footer-bottom {
+        font-size: 13px;
+        padding: 20px 0;
+        .find-shop {
+            padding-bottom: 5px;
+            margin-bottom: 5px;
+            border-bottom: 1px solid #c2c1c1;
+            a {
+                color: #1874d1;
+                text-decoration: none;
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+        .copy-list {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            ul {
+                list-style: none;
+                display: flex;
+                justify-content: center;
+                li {
+                    margin: 0 5px;
+                    padding-right: 10px;
+                    position: relative;
+                    &::before {
+                        position: absolute;
+                        top: 3px;
+                        right: 0;
+                        content: "";
+                        background-color: #c2c1c1;
+                        width: 1px;
+                        height: 15px;
+                    }
+                    a {
+                        color: #686868;
+                        font-size: 12px;
+                        text-decoration: none;
+                        &:hover {
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+//resoponsive design
+
+/* Tablet Layout: 768px. */
+
+@media only screen and (max-width: 991px) {
+    .container {
+        width: 750px;
+    }
+    .nav {
+        .navbar {
+            .menu-items {
+                display: none;
+            }
+        }
+    }
+    .main-sections {
+        background: url("../img/home/iphone14pro-bg-mobile.jpg");
+        background-size: cover;
+        background-position: center;
+        .hero-text {
+            color: #fff;
+            text-align: center;
+            h2 {
+                font-size: 32px;
+                padding-bottom: 5px;
+            }
+            h4 {
+                font-size: 20px;
+            }
+            .links {
+                font-size: 18px;
+                i {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+    .hero-14 {
+        background: url("../img/home/iphone14-bg-mobile.jpg");
+        background-position: center;
+        background-size: cover;
+
+        .hero-text {
+            color: #1d1d1f;
+        }
+    }
+    .watch {
+        background: url("../img/home/watch-bg-mobile.jpg");
+        background-position: center;
+        background-size: cover;
+    }
+
+    .product-list {
+        .products-row {
+            justify-content: space-evenly;
+            .main-sections {
+                background: url("../img/home/watch-ultra-bg-mobile.jpg");
+                background-position: center;
+                background-size: cover;
+                width: 48%;
+                margin: 7px 0;
+
+                .hero-text {
+                    color: #1d1d1f;
+                    width: 100%;
+                    h2 {
+                        font-size: 32px;
+                        padding-bottom: 5px;
+                    }
+                    .text-title {
+                        padding-bottom: 5px;
+                    }
+                    h4 {
+                        font-size: 18px;
+                        width: 90%;
+                    }
+                }
+            }
+        }
+    }
+    .footer {
+        .footer-top {
+            .disclaimer {
+                font-size: 12px;
+                padding: 10px;
+                border-radius: 10px;
+            }
+        }
+        .footer-middle {
+            padding-bottom: 0;
+            .footer-links {
+                flex-direction: column;
+                .single-link {
+                    margin-bottom: 10px;
+                }
+            }
+        }
+        .footer-bottom {
+            flex-direction: column;
+
+            .copy-list {
+                flex-direction: column;
+                align-items: flex-start;
+
+                ul {
+                    flex-wrap: wrap;
+                    justify-content: flex-start;
+                    margin: 20px 0 15px 0;
+                    li {
+                        margin: 0 5px 5px 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Mobile Layout: 320px. */
+
+@media only screen and (max-width: 767px) {
+    .container {
+        width: 350px;
+        margin: 0 auto;
+    }
+
+    .product-list {
+        .products-row {
+            .main-sections {
+                background: url("../img/home/watch-ultra-bg-mobile.jpg");
+                background-position: center;
+                background-size: cover;
+                width: 100%;
+                margin: 7px 0;
+
+                .hero-text {
+                    color: #1d1d1f;
+                    width: 100%;
+                    h2 {
+                        font-size: 32px;
+                        padding-bottom: 5px;
+                    }
+                    .text-title {
+                        padding-bottom: 5px;
+                    }
+                    h4 {
+                        font-size: 18px;
+                        width: 90%;
+                    }
+                }
+            }
+        }
+    }
+}
