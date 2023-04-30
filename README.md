@@ -1,4 +1,4 @@
-# Netflix Landing Page Recreation
+# Apple Home Page Recreation
 
 This project is a recreation of Apple's Home page using HTML, CSS, SASS, JavaScript and Vite. It's made for portfolio purposes only.
 
